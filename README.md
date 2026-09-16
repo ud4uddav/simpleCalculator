@@ -2,6 +2,12 @@
 
 A small, beginner-friendly calculator made with plain HTML, CSS, and JavaScript. It supports addition, subtraction, multiplication, division, decimals, percentages, clearing, and deleting the last character.
 
+## Live demo
+
+Once GitHub Pages is enabled, open the calculator here:
+
+[https://ud4uddav.github.io/simpleCalculator/](https://ud4uddav.github.io/simpleCalculator/)
+
 ## Run it
 
 1. Open `index.html` in a web browser, or open this folder in VS Code and use a local-preview extension.
