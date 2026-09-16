@@ -1,0 +1,56 @@
+/* Center the calculator and give the page a calm background. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #eef2ff;
+  font-family: Arial, sans-serif;
+}
+
+/* The calculator card holds the screen and button grid. */
+.calculator {
+  width: min(360px, 92vw);
+  padding: 20px;
+  border-radius: 18px;
+  background: #1f2937;
+  box-shadow: 0 14px 35px rgba(31, 41, 55, 0.25);
+}
+
+/* The display is read-only; JavaScript supplies its text. */
+.display {
+  width: 100%;
+  height: 72px;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 0;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #111827;
+  font-size: 2rem;
+  text-align: right;
+}
+
+/* Four equally sized columns make the buttons easy to scan. */
+.buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+
+button {
+  min-height: 58px;
+  border: 0;
+  border-radius: 10px;
+  background: #e5e7eb;
+  color: #111827;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+button:hover { background: #d1d5db; }
+.operator { background: #fbbf24; }
+.operator:hover { background: #f59e0b; }
+.equals { background: #34d399; }
+.equals:hover { background: #10b981; }
+/* Zero spans two columns, like many physical calculators. */
+.zero { grid-column: span 2; }

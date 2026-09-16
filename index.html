@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the layout scale correctly on phones and tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <!-- Load the styles for this page. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Everything in the calculator lives inside this card. -->
+  <main class="calculator" aria-label="Simple calculator">
+    <!-- JavaScript updates this read-only display when a button is pressed. -->
+    <input id="display" class="display" type="text" value="0" readonly aria-label="Calculator display">
+
+    <!-- Each button has a data-value that tells JavaScript what to do. -->
+    <div class="buttons">
+      <button class="operator" data-action="clear">C</button>
+      <button class="operator" data-action="delete">DEL</button>
+      <button class="operator" data-value="%">%</button>
+      <button class="operator" data-value="/">÷</button>
+
+      <button data-value="7">7</button><button data-value="8">8</button><button data-value="9">9</button><button class="operator" data-value="*">×</button>
+      <button data-value="4">4</button><button data-value="5">5</button><button data-value="6">6</button><button class="operator" data-value="-">−</button>
+      <button data-value="1">1</button><button data-value="2">2</button><button data-value="3">3</button><button class="operator" data-value="+">+</button>
+      <button class="zero" data-value="0">0</button><button data-value=".">.</button><button class="equals" data-action="calculate">=</button>
+    </div>
+  </main>
+
+  <!-- Load JavaScript after the page so the buttons already exist. -->
+  <script src="script.js"></script>
+</body>
+</html>
